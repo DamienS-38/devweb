@@ -1,0 +1,51 @@
+html {
+    background-color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+  
+h1#enormetitre {
+ color: rgb(47, 0, 255);
+}
+
+h1 { text-align: center }  
+
+ul {
+    background: #ffffff;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.item-gallery {
+    height:200px;
+    width: 300px;
+    margin: 5px;
+    background-color: rgb(255, 255, 255);
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+  
+li {
+   margin-left: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+.container {
+  text-align: center;
+}
+.bouton {
+  background: #006eff69;
+  padding: 10px;
+}
+  
+footer {
+  text-align: center;
+  color: rgb(51, 36, 119);
+}
