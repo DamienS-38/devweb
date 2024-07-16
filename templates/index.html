@@ -2,32 +2,29 @@
 <html lang="fr">
   
   <head>
-      <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
       
+    <!--<link rel="stylesheet" type=text/css href="static/style.css" />-->
+    <link rel="stylesheet" type=text/css href="{{ url_for('static', filename='style.css') }}" />
+           
+    <meta charset="utf-8" />
+    <meta
+    property="og:Image"
+    content="https://lh4.googleusercontent.com/proxy/L0GRVf5h_dgRtghsBNg5ZOgVz2Zrazl0UQyXHk_4sJkCJPG1uEgZR4FmmVZHE671w0k-ZBxeMQEKiETafvdEAMq0bRnxvFmAFz232zi4xW2H5Fk-z-zrZg" />
+    <meta
+    property="og:description"
+    content ="Site Web de création d'histoires sur la base d'images, merci l'IA" />
+    <meta property="og:title" content="Story Creator by OLLAMA" />
       
-      <!--<link rel="stylesheet" type=text/css href="static/style.css" />-->
-      <link rel="stylesheet" type=text/css href="{{ url_for('static', filename='style.css') }}" />
-      
-      
-      
-      <meta charset="utf-8" />
-      <meta
-      property="og:Image"
-      content="https://lh4.googleusercontent.com/proxy/L0GRVf5h_dgRtghsBNg5ZOgVz2Zrazl0UQyXHk_4sJkCJPG1uEgZR4FmmVZHE671w0k-ZBxeMQEKiETafvdEAMq0bRnxvFmAFz232zi4xW2H5Fk-z-zrZg" />
-      <meta
-      property="og:description"
-      content ="Site Web de création d'histoires sur la base d'images, merci l'IA" />
-      <meta property="og:title" content="Story Creator by OLLAMA" />
-      
-      <title>STORY CREATOR</title>
+    <title>STORY CREATOR</title>
   </head>
     
   <body>
     <h1 id="enormetitre"> Story Creator</h1>
     <nav class="bouton">
       <ul>    
-        <a href="pictures.html">Pictures</a>
-        <a href="projects.html">Projects</a>
+        <a href="{{url_for('gallery')}}">Pictures</a>
+        <a href="{{url_for('projects')}}">Projects</a>
       </ul>
     </nav>
 
