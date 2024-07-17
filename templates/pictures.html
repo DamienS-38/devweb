@@ -19,13 +19,14 @@
     <h1>Galerie</h1>
 
     <h1>Cliquez sur une image pour créer une histoire !</h1>
-    <div class="gallery">
-      <div class="item-gallery"><img src="/static/images/image2.jpg"/></div>
-      <div class="item-gallery"><img src="/static/images/image3.jpg"/></div>
-      <div class="item-gallery"><img src="/static/images/image5.jpg"/></div>
-      <div class="item-gallery"><img src="/static/images/image6.jpg"/></div>
-      <div class="item-gallery"><img src="/static/images/image7.jpg"/></div>
-      <div class="item-gallery"><img src="/static/images/image8.jpg"/></div>
+    <div class = "gallery">
+      {% for url in urls %}
+        <div class = "item-gallery">
+          <a href="{{url_for('story', image_url = url)}}">
+            <img src="../{{ url }}" alt=""/>
+          </a>
+        </div>
+      {% endfor %}
     </div>
 
 
